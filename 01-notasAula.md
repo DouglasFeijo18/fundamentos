@@ -1,5 +1,14 @@
 # Notas de aula da disciplina
 Neste arquivo, há apontamentos e anotações de pontos discutidos em sala.
+##Aula 4
+  -Tarefa Avaliativa
+    -Tipos de sistemas de informação.
+    -Pesquisar, escrever e dar exemplos dos diferentes tipos de sisyemas de infromação
+      -O resultado da pesquisa deve ser colocado no arquivo glossario.mb do repositório do aluno
+      -Enviar para alexz@ufn.edu.br o link do repositorio contendo o glossario.mb
+        -O assunto da mensagem é: "Trabalho Fundamentos SI"
+      -Data de entrega: (19/03/26).
+      -Hora maxima de entrega: 20:00
 
 ## Aula 3
   - Apresentação da Oficina de Git - https://github.com/alexandrezamberlan/oficinaGit
