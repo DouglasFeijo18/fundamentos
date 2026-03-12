@@ -1,6 +1,7 @@
 # Notas de aula da disciplina
 Neste arquivo, há apontamentos e anotações de pontos discutidos em sala.
-##Aula 4
+
+## Aula 4
   -Tarefa Avaliativa
     -Tipos de sistemas de informação.
     -Pesquisar, escrever e dar exemplos dos diferentes tipos de sisyemas de infromação
