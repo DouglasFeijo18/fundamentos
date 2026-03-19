@@ -57,6 +57,22 @@ Descrição: serviços de segurança oferecidos na nuvem, como proteção e moni
 Exemplo: Cloudflare
 </h4><br>
 
+____________________________________
+
+<h1>Tarefa referente ao dia 19/03 de fundamentos de sistemas de informação.<h1> <br>
+<h2>Sistemas de Business Intelligence (BI)!<h2>
+
+O que são:
+Os sistemas de Business Intelligence (BI) são programas que ajudam as empresas a entender melhor seus próprios dados. Eles pegam muitas informações espalhadas — como vendas, clientes e lucros — e transformam tudo em gráficos e relatórios fáceis de visualizar.
+
+Exemplos:
+
+Painéis com gráficos mostrando como a empresa está indo
+
+Sistemas que mostram em quais regiões as vendas são maiores ou menores
+
+Com o BI, a empresa consegue enxergar o que está dando certo, o que precisa melhorar e tomar decisões mais seguras, baseadas em informações reais e não apenas em suposições
+
 
 
 
