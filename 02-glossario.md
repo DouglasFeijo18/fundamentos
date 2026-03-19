@@ -59,21 +59,33 @@ Exemplo: Cloudflare
 
 ____________________________________
 
-# Tarefa referente ao dia 19/03 de fundamentos de sistemas de informação.
+#  Tarefa referente ao dia 19/03 de fundamentos de sistemas de informação.
+
 ##  Sistemas de Business Intelligence (BI)!
-
-
   ###  O que são:
-    -Os sistemas de Business Intelligence (BI) são programas que ajudam as empresas a entender melhor seus próprios dados. Eles pegam muitas informações espalhadas — como vendas, clientes e lucros — e transformam tudo em gráficos e relatórios fáceis de visualizar.
-
+  -  Os sistemas de Business Intelligence (BI) são programas que ajudam as empresas a entender melhor seus próprios dados. Eles pegam muitas informações espalhadas (como vendas, clientes e lucros) e transformam tudo em gráficos e relatórios fáceis de visualizar.
   ###  Exemplos:
-    -Painéis com gráficos mostrando como a empresa está indo
-
-    -Sistemas que mostram em quais regiões as vendas são maiores ou menores
-
-    -Com o BI, a empresa consegue enxergar o que está dando certo, o que precisa melhorar e tomar decisões mais seguras, baseadas em informações reais e não apenas em suposições
+  -  Painéis com gráficos mostrando como a empresa está indo.
+  -  Sistemas que mostram em quais regiões as vendas são maiores ou menores.
+  -  Com o BI, a empresa consegue enxergar o que está dando certo, o que precisa melhorar e tomar decisões mais seguras, baseadas em informações reais e não apenas em suposições.
 
 
+## Sistemas de Processamento de Transações (TPS)!
+### O que são:
+- Os Sistemas de Processamento de Transações (TPS) são responsáveis por registrar e organizar as atividades básicas do dia a dia de uma empresa, como vendas, pagamentos, cadastros e pedidos.
+### Exemplos:
+- Sistema de caixa de supermercado (PDV), que registra cada produto comprado.
+- Sistema de controle de estoque, que atualiza automaticamente a quantidade de produtos.
+- Sistema bancário que registra depósitos, saques e transferências.
+
+
+## Sistemas de Informação Gerencial (MIS)!
+### O que são:
+- Os Sistemas de Informação Gerencial (MIS) são responsáveis por transformar os dados coletados pelos sistemas operacionais (como os TPS) em relatórios organizados e fáceis de entender. Eles ajudam os gerentes a acompanhar o desempenho da empresa e entender melhor o que está acontecendo em cada setor.
+### Exemplos:
+- Sistema que gera relatórios mensais de vendas.
+- Sistema de controle financeiro usado para acompanhar receitas e gastos da empresa.
+- Esses sistemas ajudam na tomada de decisões táticas, como definir metas ou reduzir custos.
 
 
 
