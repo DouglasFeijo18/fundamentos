@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanPro | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="dashboard-body">
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <div class="brand-badge solid-badge">
+          <i class="fa-solid fa-wallet"></i>
+          <span>FinanPro</span>
+        </div>
+        <button class="mobile-close" id="closeSidebar" aria-label="Fechar menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-link active" data-section="dashboardSection"><i class="fa-solid fa-house"></i><span>Dashboard</span></button>
+        <button class="nav-link" data-section="expensesSection"><i class="fa-solid fa-receipt"></i><span>Gastos</span></button>
+        <button class="nav-link" data-section="investmentsSection"><i class="fa-solid fa-chart-line"></i><span>Investimentos</span></button>
+        <button class="nav-link danger-link" id="logoutButton"><i class="fa-solid fa-right-from-bracket"></i><span>Sair</span></button>
+      </nav>
+
+      <div class="sidebar-card">
+        <p>Saldo projetado</p>
+        <strong id="projectedBalance">R$ 0,00</strong>
+        <span>Atualizado automaticamente com suas movimentações.</span>
+      </div>
+    </aside>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main-content">
+      <header class="topbar glass-card">
+        <div>
+          <button class="menu-toggle" id="openSidebar" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <p class="eyebrow">Painel financeiro pessoal</p>
+          <h1 id="greetingTitle">Olá 👋</h1>
+        </div>
+        <div class="topbar-user">
+          <div class="user-chip">
+            <i class="fa-solid fa-user"></i>
+            <span id="userNameDisplay">Usuário</span>
+          </div>
+        </div>
+      </header>
+
+      <div id="dashboardAlert" class="alert floating-alert hidden"></div>
+
+      <section id="dashboardSection" class="content-section active-section">
+        <div class="stats-grid">
+          <article class="stat-card income-card">
+            <div class="stat-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+            <div>
+              <p>Receita do mês</p>
+              <strong id="incomeValue">R$ 0,00</strong>
+            </div>
+          </article>
+          <article class="stat-card expense-card">
+            <div class="stat-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+            <div>
+              <p>Gastos do mês</p>
+              <strong id="expenseValue">R$ 0,00</strong>
+            </div>
+          </article>
+          <article class="stat-card balance-card">
+            <div class="stat-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div>
+              <p>Saldo atual</p>
+              <strong id="balanceValue">R$ 0,00</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="panel-grid">
+          <section class="panel glass-card">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Receita</p>
+                <h2>Salário mensal</h2>
+              </div>
+            </div>
+            <form id="incomeForm" class="inline-form">
+              <label class="input-group compact">
+                <span>Valor mensal</span>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-coins"></i>
+                  <input type="number" id="monthlyIncome" min="0" step="0.01" placeholder="Ex: 4500.00">
+                </div>
+              </label>
+              <button type="submit" class="primary-btn">Salvar receita</button>
+            </form>
+          </section>
+
+          <section class="panel glass-card quick-insights">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Insights</p>
+                <h2>Resumo instantâneo</h2>
+              </div>
+            </div>
+            <div class="insight-list">
+              <article>
+                <span>Maior categoria</span>
+                <strong id="topCategory">Sem dados</strong>
+              </article>
+              <article>
+                <span>Total investido</span>
+                <strong id="investmentTotal">R$ 0,00</strong>
+              </article>
+              <article>
+                <span>Qtd. de gastos</span>
+                <strong id="expenseCount">0 lançamentos</strong>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="charts-grid">
+          <section class="panel glass-card chart-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Distribuição</p>
+                <h2>Gastos por categoria</h2>
+              </div>
+            </div>
+            <canvas id="expensePieChart"></canvas>
+          </section>
+
+          <section class="panel glass-card chart-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Comparativo</p>
+                <h2>Receita x gastos</h2>
+              </div>
+            </div>
+            <canvas id="incomeExpenseBarChart"></canvas>
+          </section>
+        </div>
+      </section>
+
+      <section id="expensesSection" class="content-section">
+        <div class="panel-grid two-columns">
+          <section class="panel glass-card">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Novo gasto</p>
+                <h2>Adicionar despesa</h2>
+              </div>
+            </div>
+            <form id="expenseForm" class="stack-form">
+              <label class="input-group compact">
+                <span>Valor</span>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-brazilian-real-sign"></i>
+                  <input type="number" id="expenseAmount" min="0" step="0.01" placeholder="Ex: 120.50" required>
+                </div>
+              </label>
+              <label class="input-group compact">
+                <span>Categoria</span>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tags"></i>
+                  <select id="expenseCategory" required></select>
+                </div>
+              </label>
+              <label class="input-group compact">
+                <span>Data</span>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-calendar-day"></i>
+                  <input type="date" id="expenseDate">
+                </div>
+              </label>
+              <button type="submit" class="primary-btn danger-btn">Adicionar gasto</button>
+            </form>
+          </section>
+
+          <section class="panel glass-card">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Histórico</p>
+                <h2>Seus gastos</h2>
+              </div>
+            </div>
+            <div id="expenseList" class="expense-list"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="investmentsSection" class="content-section">
+        <div class="panel-grid two-columns">
+          <section class="panel glass-card">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Novo investimento</p>
+                <h2>Adicionar aplicação</h2>
+              </div>
+            </div>
+            <form id="investmentForm" class="stack-form">
+              <label class="input-group compact">
+                <span>Nome</span>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-seedling"></i>
+                  <input type="text" id="investmentName" placeholder="Ex: Tesouro Selic" required>
+                </div>
+              </label>
+              <label class="input-group compact">
+                <span>Valor</span>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-coins"></i>
+                  <input type="number" id="investmentAmount" min="0" step="0.01" placeholder="Ex: 800.00" required>
+                </div>
+              </label>
+              <label class="input-group compact">
+                <span>Tipo</span>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <input type="text" id="investmentType" placeholder="Ex: Renda fixa (opcional)">
+                </div>
+              </label>
+              <button type="submit" class="primary-btn purple-btn">Adicionar investimento</button>
+            </form>
+          </section>
+
+          <section class="panel glass-card">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Portfólio</p>
+                <h2>Carteira atual</h2>
+              </div>
+            </div>
+            <div id="investmentCards" class="investment-cards"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

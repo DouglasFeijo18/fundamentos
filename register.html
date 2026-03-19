@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanPro | Cadastro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body register-body">
+  <main class="auth-shell register-shell">
+    <section class="auth-panel glass-card register-panel">
+      <div class="auth-header">
+        <h2>Criar sua conta</h2>
+        <p>Configure seu espaço financeiro pessoal em poucos segundos.</p>
+      </div>
+
+      <div id="registerAlert" class="alert hidden"></div>
+
+      <form id="registerForm" class="auth-form" novalidate>
+        <label class="input-group">
+          <span>Nome completo</span>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="registerName" placeholder="Seu nome completo" required>
+          </div>
+          <small class="error-text"></small>
+        </label>
+
+        <label class="input-group">
+          <span>Email</span>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="registerEmail" placeholder="voce@email.com" required>
+          </div>
+          <small class="error-text"></small>
+        </label>
+
+        <label class="input-group">
+          <span>Senha</span>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="registerPassword" placeholder="Crie uma senha segura" required>
+            <button type="button" class="toggle-password" data-target="registerPassword" aria-label="Mostrar senha">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+          <small class="error-text"></small>
+        </label>
+
+        <label class="input-group">
+          <span>Confirmar senha</span>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="registerConfirmPassword" placeholder="Repita sua senha" required>
+            <button type="button" class="toggle-password" data-target="registerConfirmPassword" aria-label="Mostrar senha">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+          <small class="error-text"></small>
+        </label>
+
+        <button type="submit" class="primary-btn animated-btn success-btn">
+          <span>Criar conta</span>
+          <i class="fa-solid fa-user-plus"></i>
+        </button>
+      </form>
+
+      <p class="auth-footer">Já possui conta? <a href="index.html">Fazer login</a></p>
+    </section>
+
+    <section class="auth-brand-panel glass-card register-brand-panel">
+      <div class="brand-badge alt-badge">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Planejamento inteligente</span>
+      </div>
+      <div>
+        <p class="eyebrow">App estilo fintech</p>
+        <h1>Visualize seu fluxo financeiro com clareza, rapidez e confiança.</h1>
+        <p class="lead">Receba feedback visual instantâneo, organize categorias e veja seus números ganharem contexto em gráficos profissionais.</p>
+      </div>
+      <div class="mini-stats">
+        <article>
+          <strong>+8</strong>
+          <span>categorias com semântica visual</span>
+        </article>
+        <article>
+          <strong>100%</strong>
+          <span>armazenado localmente para uso imediato</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
