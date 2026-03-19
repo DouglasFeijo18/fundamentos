@@ -65,27 +65,27 @@ ____________________________________
   ###  O que são:
   -  Os sistemas de Business Intelligence (BI) são programas que ajudam as empresas a entender melhor seus próprios dados. Eles pegam muitas informações espalhadas (como vendas, clientes e lucros) e transformam tudo em gráficos e relatórios fáceis de visualizar.
   ###  Exemplos:
-  -  Painéis com gráficos mostrando como a empresa está indo.
-  -  Sistemas que mostram em quais regiões as vendas são maiores ou menores.
-  -  Com o BI, a empresa consegue enxergar o que está dando certo, o que precisa melhorar e tomar decisões mais seguras, baseadas em informações reais e não apenas em suposições.
+  -  <b>Netflix:<b> Usa BI para analisar o comportamento dos usuários e decidir quais filmes e séries recomendar.
+  -  <b>Amazon:<b> Utiliza BI para analisar vendas, prever demanda e sugerir produtos personalizados para cada cliente.
+  -  <b> Uber:<b> Usa BI para analisar dados de corridas, horários de pico e regiões com maior demanda, melhorando preços e disponibilidade de motoristas.
 
 
 ## Sistemas de Processamento de Transações (TPS)!
 ### O que são:
-- Os Sistemas de Processamento de Transações (TPS) são responsáveis por registrar e organizar as atividades básicas do dia a dia de uma empresa, como vendas, pagamentos, cadastros e pedidos.
+  - Os Sistemas de Processamento de Transações (TPS) são responsáveis por registrar e organizar as atividades básicas do dia a dia de uma empresa, como vendas, pagamentos, cadastros e pedidos.
 ### Exemplos:
-- Sistema de caixa de supermercado (PDV), que registra cada produto comprado.
-- Sistema de controle de estoque, que atualiza automaticamente a quantidade de produtos.
-- Sistema bancário que registra depósitos, saques e transferências.
+  -  <b>Walmart:</b> Utiliza TPS nos caixas para registrar as compras dos clientes e atualizar o estoque automaticamente em tempo real.
+  -  <b>Banco do Brasil:</b> Usa TPS para processar operações bancárias como saques, depósitos, transferências e pagamentos.
+  -  <b>McDonald's:</b> Utiliza TPS para registrar pedidos, processar pagamentos e enviar as informações diretamente para a cozinha.
 
 
 ## Sistemas de Informação Gerencial (MIS)!
 ### O que são:
-- Os Sistemas de Informação Gerencial (MIS) são responsáveis por transformar os dados coletados pelos sistemas operacionais (como os TPS) em relatórios organizados e fáceis de entender. Eles ajudam os gerentes a acompanhar o desempenho da empresa e entender melhor o que está acontecendo em cada setor.
+  - Os Sistemas de Informação Gerencial (MIS) são responsáveis por transformar os dados coletados pelos sistemas operacionais (como os TPS) em relatórios organizados e fáceis de entender. Eles ajudam os gerentes a acompanhar o desempenho da empresa e entender melhor o que está acontecendo em cada setor.
 ### Exemplos:
-- Sistema que gera relatórios mensais de vendas.
-- Sistema de controle financeiro usado para acompanhar receitas e gastos da empresa.
-- Esses sistemas ajudam na tomada de decisões táticas, como definir metas ou reduzir custos.
+  -  <b>Magazine Luiza:</b> Usa MIS para gerar relatórios de vendas e acompanhar o desempenho das lojas e metas da empresa.
+  -  <b>Petrobras:</b> Utiliza MIS para monitorar custos, produção e resultados financeiros de diferentes setores.
+  -  <b>Ambev:</b> Usa MIS para analisar lucros, despesas e produtividade nas fábricas e centros de distribuição.
 
 
 
