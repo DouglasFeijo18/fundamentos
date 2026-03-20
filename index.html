@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinanPro | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+  <main class="auth-shell">
+    <section class="auth-brand-panel glass-card">
+      <div class="brand-badge">
+        <i class="fa-solid fa-wallet"></i>
+        <span>FinanPro</span>
+      </div>
+      <div>
+        <p class="eyebrow">Gestão financeira pessoal</p>
+        <h1>Controle seu dinheiro com experiência de app moderno.</h1>
+        <p class="lead">Acompanhe receitas, gastos, investimentos e insights visuais em um único painel elegante.</p>
+      </div>
+      <div class="feature-list">
+        <div class="feature-item"><i class="fa-solid fa-chart-pie"></i><span>Gráficos dinâmicos com Chart.js</span></div>
+        <div class="feature-item"><i class="fa-solid fa-shield-heart"></i><span>Autenticação local com validação inteligente</span></div>
+        <div class="feature-item"><i class="fa-solid fa-sparkles"></i><span>UX responsiva com microinterações suaves</span></div>
+      </div>
+    </section>
+
+    <section class="auth-panel glass-card">
+      <div class="auth-header">
+        <h2>Entrar na conta</h2>
+        <p>Faça login para acessar seu dashboard financeiro.</p>
+      </div>
+
+      <div id="loginAlert" class="alert hidden"></div>
+
+      <form id="loginForm" class="auth-form" novalidate>
+        <label class="input-group">
+          <span>Email</span>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="loginEmail" placeholder="voce@email.com" required>
+          </div>
+          <small class="error-text"></small>
+        </label>
+
+        <label class="input-group">
+          <span>Senha</span>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="loginPassword" placeholder="Sua senha" required>
+            <button type="button" class="toggle-password" data-target="loginPassword" aria-label="Mostrar senha">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+          <small class="error-text"></small>
+        </label>
+
+        <button type="submit" class="primary-btn animated-btn">
+          <span>Entrar</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <p class="auth-footer">Ainda não tem conta? <a href="register.html">Criar cadastro</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
