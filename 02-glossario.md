@@ -87,6 +87,17 @@ ____________________________________
   -  <b>Petrobras:</b> Utiliza MIS para monitorar custos, produção e resultados financeiros de diferentes setores.
   -  <b>Ambev:</b> Usa MIS para analisar lucros, despesas e produtividade nas fábricas e centros de distribuição.
 
+#  Curiosidade
+  ###  gov.br
+  -  Tipo: SIG (Sistema de Informação Gerencial).
 
+  ###  Netflix
+  -  Tipo: SAD (Sistema de Apoio à Decisão).
+
+  ###  Minha Agenda UFN
+  -  Tipo: TPS (Sistema de Processamento de Transações).
+
+  ###  Sistema de Imposto de Renda do Governo Brasileiro
+  -  Tipo: TPS (Sistema de Processamento de Transações).
 
 
