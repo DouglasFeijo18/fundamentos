@@ -101,3 +101,18 @@ ____________________________________
   -  Tipo: TPS (Sistema de Processamento de Transações).
 
 
+  # AULA 7
+
+  ## O QUE SÃO INTERNET DAS COISAS?
+  -  A Internet das Coisas (IoT) é um conceito que consiste em nossas coisas do cotidiano estão contectadas a interne, como: geladeiras, relogios, ar condicionados, entre outros.
+  -  Dispositivo/sensor coleta informações (temperatura, movimento, etc.) > Conexão com a internet > Processamento dos dados > Ação: como ligar algo automaticamente ou te enviar um alerta
+
+  ## Sistemas Pervasivos e Ubíquos
+  -  São sistemas tecnológicos que estão espalhados no ambiente e funcionam de forma quase invisível, ajudando o usuário sem ele precisar pensar muito. 
+  -  Ou seja; imoveis.
+
+  -  São sistemas onde a tecnologia está presente em vários dispositivos e lugares, conectados, permitindo acesso a qualquer hora e em qualquer lugar.
+  -  Ou seja; moveis.
+
+
+
