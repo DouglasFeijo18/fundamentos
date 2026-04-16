@@ -114,5 +114,14 @@ ____________________________________
   -  São sistemas onde a tecnologia está presente em vários dispositivos e lugares, conectados, permitindo acesso a qualquer hora e em qualquer lugar.
   -  Ou seja; moveis.
 
+  # AULA 8
+
+  ## Modelo TCP/IP, suas fragilidades e como mitiga-las:
+  
+  - O modelo TCP/IP é um conjunto de regras (protocolos) que define como os dados são divididos, enviados pela rede e entregues corretamente entre dispositivos na internet, funcionando por meio de camadas que organizam cada etapa da comunicação.
+
+  - Sua principal fragilidade é não ter segurança nativa, o que pode permitir interceptação de dados, falsificação de identidade e outros ataques. Por isso, precisa de mecanismos extras de proteção.
+
+  - Para mitigar isso, utiliza-se criptografia (como HTTPS), firewalls, antivírus e outras ferramentas de segurança para proteger a comunicação.
 
 
