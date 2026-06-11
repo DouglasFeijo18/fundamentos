@@ -124,4 +124,31 @@ ____________________________________
 
   - Para mitigar isso, utiliza-se criptografia (como HTTPS), firewalls, antivírus e outras ferramentas de segurança para proteger a comunicação.
 
+  # AULA 9
+
+  # Governança de TI, Ética e Privacidade de Dados (O impacto da LGPD)
+
+## Palavras ou expressões
+  - <b>GOVERNANÇA DE TI</b>: Conjunto de diretrizes que garante que a tecnologia apoie os objetivos do negócio, gerenciando riscos (COBIT) e otimizando a entrega de serviços (ITIL).
+  - <b>PRIVACY BY DESIGN</b>: Conceito onde a privacidade e a proteção de dados são pensadas desde o início do desenvolvimento de um software, e não depois de pronto.
+  - <b>DADOS SENSÍVEIS</b>: Dados pessoais sobre origem racial, convicção religiosa, saúde ou vida sexual, que exigem maior proteção por estarem sujeitos a discriminação.
+
+## Atividade: Estudo de Caso MedAgenda
+ <h2>Análise do vazamento de 10.000 prontuários médicos devido ao uso de banco de dados real em ambiente local de desenvolvimento.</h2> <br>
+
+ <h3> Identificação de Danos e Violações:</h3>
+<h4>
+Descrição: Exposição de dados sensíveis (diagnósticos médicos) e dados pessoais (nomes e CPFs). Violação direta dos princípios de Segurança, Prevenção e Finalidade da LGPD.<br>
+</h4><br>
+
+ <h3> Mitigação Tecnológica (Docker e Bancos de Dados): </h3>
+<h4>  
+Descrição: Uso de contêineres Docker para isolar ambientes locais, utilizando apenas dados sintéticos (falsos) ou passando por processos de Mascaramento e Anonimização de dados reais.<br>
+</h4><br>
+
+ <h3> Governança e Política de Acessos na Nuvem: </h3>
+<h4>
+Descrição: Implementação do Princípio do Menor Privilégio via AWS IAM (desenvolvedores não acessam a produção), segregação de contas (Dev/Prod) e criptografia obrigatória de discos via MDM nos notebooks corporativos.<br>
+</h4><br>
+
 
